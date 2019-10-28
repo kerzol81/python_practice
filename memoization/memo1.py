@@ -2,8 +2,9 @@ import time
 from functools import lru_cache
 cache = {}
 
+
 #@lru_cache(maxsize=256)
-def expensive_function(number):
+def funky(number):
     print("wait", number, "seconds...")
     if number in cache:
         return cache[number]
@@ -15,12 +16,12 @@ def expensive_function(number):
 
 
 
-expensive_function(1)
-expensive_function(2)
-expensive_function(3)
-expensive_function(3)
-expensive_function(3)
-expensive_function(3)
-expensive_function(3)
-expensive_function(3)
-expensive_function(4)
+funky(1)
+funky(2)
+funky(3)
+funky(3)
+funky(3)
+funky(3)
+funky(3)
+funky(3)
+funky(4)
