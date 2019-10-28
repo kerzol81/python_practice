@@ -5,10 +5,8 @@ from functools import lru_cache
 def fibonacci(n):
     if type(n) != int or n < 1:
         raise TypeError("n must be a positive integer")
-
     if n < 3:
         return 1
-
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
 
