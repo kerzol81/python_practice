@@ -8,7 +8,6 @@ def expensive_function(number):
     if number in cache:
         return cache[number]
     else:
-
         time.sleep(number)
         value = number * number
         cache[number] = value
@@ -16,12 +15,12 @@ def expensive_function(number):
 
 
 
+expensive_function(1)
+expensive_function(2)
+expensive_function(3)
+expensive_function(3)
+expensive_function(3)
+expensive_function(3)
+expensive_function(3)
 expensive_function(3)
 expensive_function(4)
-expensive_function(3)
-expensive_function(3)
-expensive_function(3)
-expensive_function(3)
-expensive_function(3)
-expensive_function(3)
-expensive_function(5)
