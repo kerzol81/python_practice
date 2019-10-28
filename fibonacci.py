@@ -12,6 +12,11 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
 
-
+# test for 1000 fibos:
 for i in range(1, 1001):
     print(i, ':', fibonacci(i))
+
+
+# golden ratio:
+for i in range(1, 1001):
+    print(fibonacci(i + 1) / fibonacci(i))
