@@ -3,9 +3,9 @@ def caesar_encrypt(word, step):
         raise TypeError("'\'word\' argument must be a string")
     if not type(step) is int:
         raise TypeError("\'step\' argument must be an integer")
-    
+    print(word.upper())
     encrypted_word = ''
-    for char in word:
+    for char in word.lower():
         if char is ' ':
             encrypted_word += ' '
         elif char.isupper():
